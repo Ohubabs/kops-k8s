@@ -69,10 +69,10 @@ You Created. --> Save.
 # 6) create an S3 bucket
 # Execute the commands below in your KOPS control Server. use unique s3 bucket name. If you get bucket name exists error.
 
-	aws s3 mb s3://class29Team44
+	aws s3 mb s3://team44
 	aws s3 ls
 	
-    ex: s3://class29Team44
+    ex: s3://team44
      
 	Expose environment variable:
 
@@ -81,7 +81,7 @@ You Created. --> Save.
 	
 	# Give Unique Name And S3 Bucket which you created.
 	export NAME=class.k8s.local
-	export KOPS_STATE_STORE=s3://class29Team44
+	export KOPS_STATE_STORE=s3://team44
  
     source .bashrc
 	
@@ -114,8 +114,8 @@ You Created. --> Save.
 
 # 11) connect to the master node
     sh -i ~/.ssh/id_rsa ubuntu@ipAddress
-    ssh -i ~/.ssh/id_rsa ubuntu@18.222.139.125
-    ssh -i ~/.ssh/id_rsa ubuntu@172.20.58.124
+    ssh -i ~/.ssh/id_rsa ubuntu@44.211.221.245
+    ssh -i ~/.ssh/id_rsa ubuntu@172.31.94.196
 # 11) To list nodes
 
 	  kubectl get nodes 
